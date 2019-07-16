@@ -75,7 +75,7 @@
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 }
             });
-           var alamat = "http://miraaaaa.herokuapp.com/api/artikel";
+           var alamat = "http://miraaaaa.herokuapp.com/api/article";
            $.ajax({
                url: alamat,
                method:"GET",
@@ -102,5 +102,11 @@
                var nama = $('.nama').val();
            })
         })
+
+
+      $(document).ready(function(){
+          $('#select2').select2();
+       });
+
     </script>
 @endsection

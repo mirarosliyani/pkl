@@ -38,11 +38,17 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
                          <li class="nav-item">
-                                <a class="nav-link" href="{{ url('/admin/kategori') }}">Artikel</a>
+                                <a class="nav-link" href="{{ url('/admin/artikel') }}">Artikel</a>
                             </li>
-                    </ul>
+
+                         <li class="nav-item">
+                                <a class="nav-link" href="{{ url('/admin/kategori') }}">Kategori</a>
+                            </li>
+
+                         <li class="nav-item">
+                                <a class="nav-link" href="{{ url('/admin/tag') }}">Tag</a>
+                            </li>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">

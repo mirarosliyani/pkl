@@ -47,21 +47,14 @@
                                         @enderror
                                     </div>
                                     <div class="form-group">
-                                        <label for="">Tag</label>
-                                        <select class="form-control
-                                        @error('tag') is-invalid @enderror" name="tag[]" id="s2_demo3" multiple="multiple" required>
-                                            @foreach ($tag as $data)
-                                                <option value="{{$data->id}}">
-                                                    {{ $data->nama_tag }}
-                                                </option>
-                                            @endforeach
-                                        </select>
-                                        @error('tag')
-                                        <span class="invalid-feedback" role="alert">
-                                            <strong>{{$message}}</strong>
-                                        </span>
-                                        @enderror
-                                    </div>
+              <label for="">Tag</label>
+                <select id="select2" name="tag[]" class="form-control " multiple="multiple">
+                  @foreach($tag as $data)
+                    <option value="{{ $data->id }}">
+                      {{ $data->nama_tag }}</option>
+                        @endforeach
+                </select>
+            </div>
                                     <div class="form-group">
                                         <label for="">Kategori</label>
                                         <select class="form-control
@@ -77,18 +70,9 @@
                                         </span>
                                         @enderror
                                     </div>
-                                    <div class="form-group">
-                                            <label for="">Konten</label>
-                                            <textarea class="form-control
-                                            @error('konten') is-invalid @enderror"
-                                            name="konten" id="editor1" required>
-                                            </textarea>
-                                            @error('konten')
-                                            <span class="invalid-feedback" role="alert">
-                                                <strong>{{$message}}</strong>
-                                            </span>
-                                            @enderror
-                                        </div>
+                                     <div class="input-group">
+                    <textarea name="konten" id="" class="form-control ckeditor" cols="30" rows="10"></textarea>
+                </div>
                                     <div class="form-group">
                                         <button type="submit" class="btn btn-outline-info btn-rounded btn-block">
                                             Simpan Data

@@ -83,18 +83,9 @@
                                         @enderror
                                     </div>
 
-                                    <div class="form-group">
-                                            <label for="">Konten</label>
-                                            <textarea class="form-control
-                                            @error('konten') is-invalid @enderror"
-                                            name="konten" id="editor1" required>{{ $artikel->konten}}
-                                            </textarea>
-                                            @error('konten')
-                                            <span class="invalid-feedback" role="alert">
-                                                <strong>{{$message}}</strong>
-                                            </span>
-                                            @enderror
-                                        </div>
+                                    <div class="input-group">
+                    <textarea name="konten" id="" class="form-control ckeditor" cols="30" rows="10"></textarea>
+                </div>
                                         <div class="form-group">
                                                 <button type="submit" class="btn btn-outline-info">
                                                     Simpan Data
